@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>更新フォーム</title>
+	 <link href="css/bootstrap.min.css" rel="stylesheet"> 
+	 <link href="css/todolist.css" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<h1>Todoリスト</h1>
+	</div>
+	<div class="background">
+	<div class="container">
+		<div class="alert alert-success alert-dismissible fade in" role="alert" id="seiko">
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+			<strong> 完了しました!</strong> 
+			<ul>
+		  		<li>No.27のTodoを更新しました。</li>
+			</ul>
+		</div>
+		<div class="alert alert-danger alert-dismissible fade in" role="alert" id="sippai">
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+			<strong > エラーが発生しました!</strong> 
+			<ul>
+		  		<li>題名は必須入力です。</li>
+		  		<li>題名は100文字以内にしてください。</li>
+		  		<li>期限は「YYYY/MM/DD」形式で入力してください。</li>
+		  	</ul>
+		</div>
+		<div class="row">
+			<div class="col-sm-1"></div>
+			<div class="col-sm-11"><h2 class="dai">更新フォーム</h2></div>
+		</div>
+						<hr>
+		
+		<form class="form-horizontal">
+ 		<div class="form-group ">
+			<label for="inputEmail3" class="col-sm-1 control-label"></label>
+    		<label for="inputEmail3" class="col-sm-2 control-label">題名</label>
+    		<div class="col-sm-9">
+      		<input type="email" class="form-control" id="inputEmail3" placeholder="題名"></div>
+    	</div>
+    	
+    	 <div class="form-group">
+		  	<label for="inputEmail3" class="col-sm-1 control-label"></label>
+		    <label for="inputEmail3" class="col-sm-2 control-label">詳細</label>
+  			<div class="col-sm-9">
+			<textarea class="form-control" rows="3"placeholder="備考"></textarea></div>
+  		</div>
+		
+		<div class="form-group">
+		  	<label for="inputEmail3" class="col-sm-1 control-label"></label>
+		    <label for="inputEmail3" class="col-sm-2 control-label">重要度</label>
+		    <div class="col-sm-9">
+    
+			<label class="radio-inline">
+	  			<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked> ★★★
+			</label><br>
+			<label class="radio-inline">
+		  		<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> ★★
+			</label><br>
+			<label class="radio-inline">
+		  		<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option3"> ★
+			</label><br>
+		</div>
+		<div class="form-group ">
+			<label for="inputEmail3" class="col-sm-1 control-label"></label>
+    		<label for="inputEmail3" class="col-sm-2 control-label">期限</label>
+    		<div class="col-sm-9">
+      		<input type="email" class="form-control" id="inputEmail3", placeholder="期限">
+      		</div>
+    	</div>
+    	
+    	<div class="col-sm-3 control-label"></div>
+    	<a href="index.html"><a href="index.html"><button type="button" class="btn btn-default">キャンセル</button></a>
+    	<a href="index.html"><button type="button" class="btn btn-info">更新</button></a>
+    	
+    	<a href="index.html"><button type="button" class="btn btn-danger" id="right">削除</button></a>
+		
+		
+		</form>
+	</div>
+	</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
