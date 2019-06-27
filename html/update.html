@@ -40,14 +40,14 @@
 				<label class="col-sm-1 control-label"></label>
 	    		<label for="daimei" class="col-sm-2 control-label">題名</label>
 	    		<div class="col-sm-9">
-	      		<input type="email" class="form-control" id="daimei" value="テストテスト"></div>
+	      		<input type="email" class="form-control" id="daimei" placeholder="題名" value="テストテスト"></div>
 	    	</div>
 	    	
 	    	<div class="form-group">
 			  	<label class="col-sm-1 control-label"></label>
 			    <label for="syosai" class="col-sm-2 control-label">詳細</label>
 	  			<div class="col-sm-9">
-				<textarea class="form-control" id="syosai" rows="3">SQLの確認テストの採点と報告書を作成する。</textarea></div>
+				<textarea class="form-control" id="syosai" placeholder="備考" rows="3">SQLの確認テストの採点と報告書を作成する。</textarea></div>
 	  		</div>
 			
 			<div class="form-group">
@@ -69,17 +69,18 @@
 				</div>
 			</div>
 			<div class="form-group ">
-				<label class="col-sm-1 control-label">期限</label>
-	    		<label for="kigen" class="col-sm-2 control-label"></label>
+				<label class="col-sm-1 control-label"></label>
+	    		<label for="kigen" class="col-sm-2 control-label">期限</label>
 	    		<div class="col-sm-9">
-	      		<input type="email" class="form-control" id="kigen" value="2015/06/15">
+	      		<input type="email" class="form-control" id="kigen" placeholder="期限" value="2015/06/15">
 	      		</div>
 	    	</div>
 	    	
 	    	<div class="col-sm-3 control-label"></div>
 	    	<form action="index.html" method="post">
-		    <button type="submit" class="btn btn-default button" >キャンセル</button>
+	    	<button type="submit" class="btn btn-default button" >キャンセル</button>
 		    <button type="submit" class="btn btn-info button" >追加</button>
+		    <button type="submit" class="btn btn-danger button" id="right" >削除</button>
 		    </form>
 		</div>
 	</div>
