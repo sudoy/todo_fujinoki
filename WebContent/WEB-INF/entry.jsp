@@ -72,4 +72,5 @@
 
 				    <button type="submit" class="btn btn-default button" >キャンセル</button>
 				    <button type="submit" class="btn btn-info button" >追加</button>
+				</form>
 <jsp:include page="footer.jsp"></jsp:include>

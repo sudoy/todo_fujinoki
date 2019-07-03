@@ -40,4 +40,5 @@
 		</table>
 
 			<button type="submit" class="btn btn-info" >追加</button>
+		</form>
 <jsp:include page="footer.jsp"></jsp:include>
