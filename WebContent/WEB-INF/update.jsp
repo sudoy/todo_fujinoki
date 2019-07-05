@@ -31,14 +31,14 @@
 				<label class="col-sm-1 control-label"></label>
 	    		<label for="daimei" class="col-sm-2 control-label">題名</label>
 	    		<div class="col-sm-9">
-	      		<input type="text" class="form-control" id="daimei" placeholder="題名" value="テストテスト"></div>
+	      		<input type="text" class="form-control" id="daimei" placeholder="題名" value="テストテスト" name="title"></div>
 	    	</div>
 
 	    	<div class="form-group">
 			  	<label class="col-sm-1 control-label"></label>
 			    <label for="syosai" class="col-sm-2 control-label">詳細</label>
 	  			<div class="col-sm-9">
-				<textarea class="form-control" id="syosai" placeholder="備考" rows="3">SQLの確認テストの採点と報告書を作成する。</textarea></div>
+				<textarea class="form-control" id="syosai" placeholder="備考" rows="3" name="details">SQLの確認テストの採点と報告書を作成する。</textarea></div>
 	  		</div>
 
 			<div class="form-group">
@@ -49,13 +49,13 @@
 			    <div class="col-sm-9">
 
 					<label class="radio-inline">
-			  			<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked> ★★★
+			  			<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" name="importance" checked> ★★★
 					</label><br>
 					<label class="radio-inline">
-				  		<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> ★★
+				  		<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" name="importance"> ★★
 					</label><br>
 					<label class="radio-inline">
-				  		<input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> ★
+				  		<input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" name="importance"> ★
 					</label><br>
 				</div>
 			</div>
@@ -63,7 +63,7 @@
 				<label class="col-sm-1 control-label"></label>
 	    		<label for="kigen" class="col-sm-2 control-label">期限</label>
 	    		<div class="col-sm-9">
-	      		<input type="text" class="form-control" id="kigen" placeholder="期限" value="2015/06/15">
+	      		<input type="text" class="form-control" id="kigen" placeholder="期限" value="2015/06/15" name="deadline">
 	      		</div>
 	    	</div>
 
