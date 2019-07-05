@@ -67,7 +67,7 @@ public class TodoService {
 			con = DBUtils.getConnection();
 		//sql
 			sql = "INSERT INTO todolist (title, details, importance, deadline)"
-					+ "VALUES(?, ?, ?, ?)";
+					+ "VALUES(?, ?, ?)";
 
 			// プレースホルダに値を設定
 			ps = con.prepareStatement(sql);
